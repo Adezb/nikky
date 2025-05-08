@@ -1,4 +1,3 @@
-
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
@@ -26,7 +25,6 @@ Install the project dependencies using npm:
 npm install
 ```
 
-
 **Running the Project**
 
 ```bash
@@ -45,23 +43,23 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+  settings: { react: { version: "18.2" } },
+  plugins: ["react-refresh"],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
+    "react-refresh/only-export-components": [
+      "warn",
       { allowConstantExport: true },
     ],
-    "react/prop-types": 0
+    "react/prop-types": 0,
   },
-}
+};
 ```
 
 </details>
@@ -70,129 +68,151 @@ module.exports = {
 <summary><code>constants.index.js</code></summary>
 
 ```javascript
-import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import {
+  facebook,
+  instagram,
+  shieldTick,
+  support,
+  truckFast,
+  twitter,
+} from "../assets/icons";
+import {
+  bigShoe1,
+  bigShoe2,
+  bigShoe3,
+  customer1,
+  customer2,
+  shoe4,
+  shoe5,
+  shoe6,
+  shoe7,
+  thumbnailShoe1,
+  thumbnailShoe2,
+  thumbnailShoe3,
+} from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#products", label: "Products" },
-    { href: "#contact-us", label: "Contact Us" },
+  { href: "#home", label: "Home" },
+  { href: "#about-us", label: "About Us" },
+  { href: "#products", label: "Products" },
+  { href: "#contact-us", label: "Contact Us" },
 ];
 
 export const shoes = [
-    {
-        thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
-    },
-    {
-        thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
-    },
-    {
-        thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
-    },
+  {
+    thumbnail: thumbnailShoe1,
+    bigShoe: bigShoe1,
+  },
+  {
+    thumbnail: thumbnailShoe2,
+    bigShoe: bigShoe2,
+  },
+  {
+    thumbnail: thumbnailShoe3,
+    bigShoe: bigShoe3,
+  },
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+  { value: "1k+", label: "Brands" },
+  { value: "500+", label: "Shops" },
+  { value: "250k+", label: "Customers" },
 ];
 
 export const products = [
-    {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
-    },
-    {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
-    },
-    {
-        imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
-    },
-    {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
-    },
+  {
+    imgURL: shoe4,
+    name: "Nike Air Jordan-01",
+    price: "$200.20",
+  },
+  {
+    imgURL: shoe5,
+    name: "Nike Air Jordan-10",
+    price: "$210.20",
+  },
+  {
+    imgURL: shoe6,
+    name: "Nike Air Jordan-100",
+    price: "$220.20",
+  },
+  {
+    imgURL: shoe7,
+    name: "Nike Air Jordan-001",
+    price: "$230.20",
+  },
 ];
 
 export const services = [
-    {
-        imgURL: truckFast,
-        label: "Free shipping",
-        subtext: "Enjoy seamless shopping with our complimentary shipping service."
-    },
-    {
-        imgURL: shieldTick,
-        label: "Secure Payment",
-        subtext: "Experience worry-free transactions with our secure payment options."
-    },
-    {
-        imgURL: support,
-        label: "Love to help you",
-        subtext: "Our dedicated team is here to assist you every step of the way."
-    },
+  {
+    imgURL: truckFast,
+    label: "Free shipping",
+    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+  },
+  {
+    imgURL: shieldTick,
+    label: "Secure Payment",
+    subtext:
+      "Experience worry-free transactions with our secure payment options.",
+  },
+  {
+    imgURL: support,
+    label: "Love to help you",
+    subtext: "Our dedicated team is here to assist you every step of the way.",
+  },
 ];
 
 export const reviews = [
-    {
-        imgURL: customer1,
-        customerName: 'Morich Brown',
-        rating: 4.5,
-        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
-    },
-    {
-        imgURL: customer2,
-        customerName: 'Lota Mongeskar',
-        rating: 4.5,
-        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-    }
+  {
+    imgURL: customer1,
+    customerName: "Morich Brown",
+    rating: 4.5,
+    feedback:
+      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+  },
+  {
+    imgURL: customer2,
+    customerName: "Lota Mongeskar",
+    rating: 4.5,
+    feedback:
+      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+  },
 ];
 
-
 export const footerLinks = [
-    {
-        title: "Products",
-        links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
-        ],
-    },
-    {
-        title: "Help",
-        links: [
-            { name: "About us", link: "/" },
-            { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
-        ],
-    },
-    {
-        title: "Get in touch",
-        links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
-        ],
-    },
+  {
+    title: "Products",
+    links: [
+      { name: "Air Force 1", link: "/" },
+      { name: "Air Max 1", link: "/" },
+      { name: "Air Jordan 1", link: "/" },
+      { name: "Air Force 2", link: "/" },
+      { name: "Nike Waffle Racer", link: "/" },
+      { name: "Nike Cortez", link: "/" },
+    ],
+  },
+  {
+    title: "Help",
+    links: [
+      { name: "About us", link: "/" },
+      { name: "FAQs", link: "/" },
+      { name: "How it works", link: "/" },
+      { name: "Privacy policy", link: "/" },
+      { name: "Payment policy", link: "/" },
+    ],
+  },
+  {
+    title: "Get in touch",
+    links: [
+      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+      { name: "+92554862354", link: "tel:+92554862354" },
+    ],
+  },
 ];
 
 export const socialMedia = [
-    { src: facebook, alt: "facebook logo" },
-    { src: twitter, alt: "twitter logo" },
-    { src: instagram, alt: "instagram logo" },
+  { src: facebook, alt: "facebook logo" },
+  { src: twitter, alt: "twitter logo" },
+  { src: instagram, alt: "instagram logo" },
 ];
 ```
 
@@ -223,7 +243,7 @@ export const socialMedia = [
   }
 
   .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-grayish-blue pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-grayish-blue max-sm:rounded-full;
   }
 }
 
@@ -257,7 +277,7 @@ export const socialMedia = [
   }
 
   .info-text {
-    @apply font-montserrat text-slate-gray text-lg leading-7;
+    @apply font-montserrat text-grayish-blue text-lg leading-7;
   }
 }
 ```
@@ -293,48 +313,45 @@ export const socialMedia = [
 ```javascript
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
-      xs: ['12px', '16px'],
-      sm: ['14px', '20px'],
-      base: ['16px', '19.5px'],
-      lg: ['18px', '21.94px'],
-      xl: ['20px', '24.38px'],
-      '2xl': ['24px', '29.26px'],
-      '3xl': ['28px', '50px'],
-      '4xl': ['48px', '58px'],
-      '8xl': ['96px', '106px']
+      xs: ["12px", "16px"],
+      sm: ["14px", "20px"],
+      base: ["16px", "19.5px"],
+      lg: ["18px", "21.94px"],
+      xl: ["20px", "24.38px"],
+      "2xl": ["24px", "29.26px"],
+      "3xl": ["28px", "50px"],
+      "4xl": ["48px", "58px"],
+      "8xl": ["96px", "106px"],
     },
     extend: {
       fontFamily: {
-        palanquin: ['Palanquin', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
+        palanquin: ["Palanquin", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        'primary': "#ECEEFF",
-        "coral-red": "#FF6452",
-        "slate-gray": "#6D6D6D",
-        "pale-blue": "#F5F6FF",
-        "white-400": "rgba(255, 255, 255, 0.80)"
+        primary: "#ECEEFF",
+        "cyan-blue": "#FF6452",
+        "grayish-blue": "#6D6D6D",
+        "ghost-white": "#F5F6FF",
+        "white-400": "rgba(255, 255, 255, 0.80)",
       },
       boxShadow: {
-        '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
+        "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },
       backgroundImage: {
-        'hero': "url('assets/images/collection-background.svg')",
-        'card': "url('assets/images/thumbnail-background.svg')",
+        hero: "url('assets/images/collection-background.svg')",
+        card: "url('assets/images/thumbnail-background.svg')",
       },
       screens: {
-        "wide": "1440px"
-      }
+        wide: "1440px",
+      },
     },
   },
   plugins: [],
-}
+};
 ```
 
 </details>
@@ -343,4 +360,5 @@ export default {
 
 - Assets used in the project are [here](https://drive.google.com/file/d/1ccqjc8gJ7CLvXT_vUhVT4Gmys-Ze13FK/view)
 - [Tailwind Play](https://play.tailwindcss.com/)
+
 #
